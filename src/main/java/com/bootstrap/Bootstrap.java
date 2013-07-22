@@ -15,7 +15,7 @@ import com.utils.Profile;
 /**
  * @author (Daniel) Jul 22, 2013
  */
-public class SourceCodeCounter {
+public class Bootstrap {
 
 	/**
 	 * @param args
