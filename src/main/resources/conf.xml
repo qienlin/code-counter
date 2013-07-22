@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<types>
-	<type name=".java">
-		<extension>.java</extension>
-		<desc>Java source code file.</desc>
-		<single_line_comment>//</single_line_comment>
-		<multi_line_comment_begin>/*</multi_line_comment_begin>
-		<multi_line_comment_end>*/</multi_line_comment_end>
-	</type>
-	<!-- <type>
-		<extension>.html</extension>
-		<desc>HTML source code file.</desc>
-		<single_line_comment></single_line_comment>
-		<multi_line_comment_begin>&lt;!--</multi_line_comment_begin>
-		<multi_line_comment_end>--&gt;</multi_line_comment_end>
-	</type>
-	<type>
-		<extension>.js</extension>
-		<desc>Javascript source code file.</desc>
-		<single_line_comment>//</single_line_comment>
-		<multi_line_comment_begin>/*</multi_line_comment_begin>
-		<multi_line_comment_end>*/</multi_line_comment_end>
-	</type>
-	<type>
-		<extension>.xml</extension>
-		<desc>XML source code file.</desc>
-		<single_line_comment></single_line_comment>
-		<multi_line_comment_begin>&lt;!--</multi_line_comment_begin>
-		<multi_line_comment_end>--&gt;</multi_line_comment_end>
-	</type> -->
-</types>
+<profile>
+	<types>
+		<type extension=".java">
+			<desc>Java source code file.</desc>
+			<single_line_comment>//</single_line_comment>
+			<multi_line_comment_begin>/*</multi_line_comment_begin>
+			<multi_line_comment_end>*/</multi_line_comment_end>
+		</type>
+		<type extension=".html">
+			<desc>HTML source code file.</desc>
+			<single_line_comment></single_line_comment>
+			<multi_line_comment_begin>&lt;!--</multi_line_comment_begin>
+			<multi_line_comment_end>--&gt;</multi_line_comment_end>
+		</type>
+		<type extension=".js">
+			<desc>Javascript source code file.</desc>
+			<single_line_comment>//</single_line_comment>
+			<multi_line_comment_begin>/*</multi_line_comment_begin>
+			<multi_line_comment_end>*/</multi_line_comment_end>
+		</type>
+		<type extension=".xml">
+			<desc>XML source code file.</desc>
+			<single_line_comment></single_line_comment>
+			<multi_line_comment_begin>&lt;!--</multi_line_comment_begin>
+			<multi_line_comment_end>--&gt;</multi_line_comment_end>
+		</type>
+	</types>
+</profile>

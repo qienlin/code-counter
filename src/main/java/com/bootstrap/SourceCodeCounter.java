@@ -1,19 +1,16 @@
-package com;
+package com.bootstrap;
 
-import java.io.File;
 import java.io.IOException;
+import java.util.Map.Entry;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import com.pojo.SourceCodeMap;
+import com.utils.CodeType;
+import com.utils.Profile;
 
 /**
  * @author (Daniel) Jul 22, 2013
@@ -27,12 +24,18 @@ public class SourceCodeCounter {
 	 * @throws SAXException
 	 * @throws JAXBException
 	 */
-	public static void main(String[] args) throws SAXException, IOException,
-			ParserConfigurationException, JAXBException {
+	public static void main(String[] args) throws JAXBException {
 
 		// Get file in current class path
-		JAXBContext.newInstance(SourceCodeMap.class).createUnmarshaller()
+		Profile types = (Profile) JAXBContext
+				.newInstance(new Class[] { Profile.class })
+				.createUnmarshaller()
 				.unmarshal(ClassLoader.getSystemResourceAsStream("conf.xml"));
+		for (Entry<String, CodeType> entry : types.getTypes().entrySet()) {
+			System.out.println(entry.getKey() + "\t"
+					+ entry.getValue().getDesc() + "\t"
+					+ entry.getValue().getSingleLineComment());
+		}
 
 		// Document conf =
 		// DocumentBuilderFactory.newInstance().newDocumentBuilder().parse("conf.xml");
