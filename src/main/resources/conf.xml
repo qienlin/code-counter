@@ -7,6 +7,12 @@
 			<multi_line_comment_begin>/*</multi_line_comment_begin>
 			<multi_line_comment_end>*/</multi_line_comment_end>
 		</type>
+		<type extension=".go">
+			<desc>Go source code file.</desc>
+			<single_line_comment>//</single_line_comment>
+			<multi_line_comment_begin>/*</multi_line_comment_begin>
+			<multi_line_comment_end>*/</multi_line_comment_end>
+		</type>
 		<type extension=".html">
 			<desc>HTML source code file.</desc>
 			<single_line_comment></single_line_comment>
